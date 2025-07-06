@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coisas Minhas</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+        }
+
+        header {
+            grid-column: 1 / 13;
+            background-color: deepskyblue;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav.menu {
+            grid-column: 1 / 13;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav.menu ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav.menu li {
+            display: inline;
+        }
+
+        nav.menu a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid deepskyblue;
+            border-radius: 5px;
+            color: deepskyblue;
+            transition: 0.3s;
+        }
+
+        nav.menu a:hover {
+            background-color: deepskyblue;
+            color: white;
+        }
+
+        aside.image-satoru {
+            grid-column: 1 / 4;
+            padding: 20px;
+        }
+
+        aside.image-satoru img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .infos {
+            margin-top: 15px;
+        }
+
+        section.principal {
+            grid-column: 4 / 13;
+            padding: 20px;
+        }
+
+        footer {
+            grid-column: 1 / 13;
+            background-color: deepskyblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsivo para celular */
+        @media (max-width: 767px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            aside.image-satoru,
+            section.principal {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Primeiro Site</h1>
+        </header>
+
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="Sobre mim.html">Sobre mim</a></li>
+                <li><a href="Formação.html">Formação</a></li>
+                <li><a href="Portifolio.html">Portifólio</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Barra lateral com imagem -->
+        <aside class="image-satoru">
+            <img src="satoru.png.jpg" alt="Imagem de Satoru Gojo">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Feiticeiro Jujutsu</p>
+                <p><strong>Data de Nascimento:</strong> 07/12/1989</p>
+                <p><strong>Data da Morte:</strong> 24/12/2024 (aos 35 anos)</p>
+            </div>
+        </aside>
+
+        
+        <section class="principal">
+            <h2>Satoru Gojo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus, enim debitis nobis architecto a culpa soluta nihil cumque impedit tempora dolore illo ducimus magni ex dignissimos, rem harum repellat.</p>
+            <h4>Gosto bastante deste personagem fictício e resolvi usar ele como exemplo neste trabalho.</h4>
+            <p style="padding-top: 10px;"> <h3>Como Satoru Gojo morreu?</h3></p>
+            <h5> No final, Sukuna surpreende usando uma técnica roubada de outro feiticeiro chamado Mahoraga, que é capaz de se adaptar a qualquer poder, até mesmo ao Infinito de Gojo.
+                A morte de Gojo é rápida, chocante e inesperada, apesar de tudo que ele lutou.
+            </h5>
+            <p style="padding-top: 10px;"> <h3>Quem são eles?</h3></p>
+            <h5>Satoru Gojo: É considerado o feiticeiro mais poderoso do mundo, com técnicas quase invencíveis, como o “Infinito”, que impede que qualquer coisa o toque diretamente. Ele é muito carismático, confiante e protetor dos seus alunos.</h5>
+            <h5>Sukuna: É o rei das maldições, um ser maligno e extremamente poderoso que foi selado por séculos. Atualmente, ele possui o corpo de Megumi Fushiguro, um personagem importante da série.</h5>
+            <p style="padding-top: 10px;"> <h3>O que acontece na luta?</h3></p>
+            <h5>A luta é extremamente intensa e técnica, cheia de golpes sobrenaturais, poderes espaciais, domínio de territórios mágicos e regenerações.</h5>
+            <h5>Gojo dá muito trabalho para Sukuna. Em muitos momentos, parece que ele vai vencer.</h4></p>
+            <h5>Eles usam suas técnicas mais poderosas, inclusive expansões de domínio, que são como áreas fechadas onde suas técnicas ficam ainda mais fortes.</h4></p>
+            <h5>Gojo chega a cortar o corpo de Sukuna ao meio em certo momento, deixando todo mundo achando que venceu.</h4></p>
+            <p style="padding-top: 10px;"> <h3>Últimas palavras de Gojo</h3></p>
+            <h5>Antes de morrer, Gojo tem uma visão espiritual em que conversa com velhos amigos. Ele diz que morreu feliz por ter dado tudo de si e por ter lutado contra alguém tão forte.</h5>
+        </section>
+
+        
+        <footer>
+            <h3>Desenvolvido para trabalho</h3>
+        </footer>
+    </div>
+</body>
+</html>
